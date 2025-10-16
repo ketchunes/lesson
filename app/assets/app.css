@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: basetheme --default;
+}
+@plugin "daisyui/theme" {
+  name: "basetheme";
+  default: true;
+  prefersdark: false;
+  color-scheme: "dark";
+   --color-base-100:#fff;
+  --color-base-200: #49bbbd;
+  --color-base-300: oklch(92% 0 0);
+  --color-base-content: #696984;
+  --color-primary: #7fcfd1;
+  --color-primary-content: #e98f12;
+  --color-secondary: oklch(51% 0.262 276.966);
+  --color-secondary-content: #2c2f75; /*темно синий текст*/
+  --color-accent: oklch(58% 0.158 241.966);
+  --color-accent-content: #00cbb8; /*голубой цвет текста*/
+  --color-neutral: oklch(43% 0 0);
+  --color-neutral-content: #2f327d;
+  --color-info: oklch(74% 0.16 232.661);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: #7fcdce;
+  --color-success-content: oklch(27% 0.072 132.109);
+  --color-warning: oklch(75% 0.183 55.934);
+  --color-warning-content: oklch(26% 0.079 36.259);
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 0.25rem;
+  --radius-field: 0rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 1;
+}
+
+.dev {
+  outline: 1px solid red;
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+@theme {
+  --breakpoint-xs: 420px;
+}
