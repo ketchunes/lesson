@@ -1,3 +1,7 @@
+<script setup lang="ts">
+  import Testimonial from "~/components/Testimonial.vue";
+</script>
+
 <template>
   <title>leru leru</title>
   <div>
@@ -8,5 +12,6 @@
     <Totc />
     <Mal />
     <Features />
+    <Testimonial />
   </div>
 </template>

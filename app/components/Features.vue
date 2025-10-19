@@ -14,6 +14,17 @@
         </div>
       </div>
     </div>
+    <div>
+      <div class="grid grid-cols-2 items-center" v-for="(wrap, index) in wraps">
+        <div>
+          <div class="flex flex-col gap-5">
+            <div class="text-secondary-content text-4xl w-2/3 font-semibold">{{ wrap.title }}</div>
+            <div class="text-lg w-1/2">{{ wrap.text }}</div>
+          </div>
+        </div>
+        <div :class="{ 'col-start-1 row-start-1': index % 2 === 1 }"><img :src="wrap.img" alt="" /></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -30,6 +41,28 @@
     {
       img: "img/svg/clone-3.svg",
       text: "Teachers can easily see all students and class data at one time.",
+    },
+  ];
+  const wraps = [
+    {
+      img: "img/woman-1.png",
+      title: "Tools For Teachers And Learners",
+      text: "Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can handout assignments in real-time for students to complete and submit.",
+    },
+    {
+      img: "img/wrap.png",
+      title: "Assessments, Quizzes, Tests",
+      text: "Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook.",
+    },
+    {
+      img: "img/wrap-1.png",
+      title: "Class Management Tools for Educators",
+      text: "Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.",
+    },
+    {
+      img: "img/wrap-2.png",
+      title: "One-on-One Discussions",
+      text: "Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.",
     },
   ];
 </script>
