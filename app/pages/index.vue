@@ -13,5 +13,7 @@
     <Mal />
     <Features />
     <Testimonial />
+    <Lastest />
+    <Footer />
   </div>
 </template>
