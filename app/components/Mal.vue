@@ -1,6 +1,6 @@
 <template>
-  <div class="px-28 py-10 flex justify-between items-center">
-    <div class="w-1/3 flex flex-col gap-8 relative">
+  <div class="px-10 py-10 flex flex-col justify-between items-center gap-10 2xl:px-28 2xl:flex-row 2xl:gap-0">
+    <div class="2xl:w-1/3 flex flex-col gap-8 relative">
       <div class="w-10 h-10 rounded-full bg-green-300 absolute top-0 -left-3 -z-50"></div>
       <div class="text-3xl text-secondary-content font-medium">Everything you can do in a physical classroom, <span class="text-accent-content">you can do with TOTC</span></div>
       <div class="text-lg">

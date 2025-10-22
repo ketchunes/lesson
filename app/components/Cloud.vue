@@ -1,14 +1,14 @@
 <template>
-  <div class="py-10 px-28">
+  <div class="py-10 px-10 2xl:px-28">
     <div class="flex flex-col items-center gap-5">
       <div class="text-4xl font-semibold text-secondary-content">All-In-One <span class="text-accent-content">Cloud Software.</span></div>
-      <div class="w-1/3 text-center">TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office.</div>
+      <div class="text-center 2xl:w-1/3">TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office.</div>
     </div>
-    <div class="grid grid-cols-3 mt-5 gap-32">
+    <div class="grid 2xl:grid-cols-3 mt-5 gap-20 2xl:gap-32">
       <div v-for="card in cards">
-        <div class="shadow-2xl pb-4 rounded-3xl flex flex-col justify-center gap-3">
+        <div class="shadow-lg pb-4 rounded-3xl flex flex-col justify-center gap-3">
           <div><img class="m-auto" :src="card.img" alt="" /></div>
-          <div class="w-2/3 m-auto h-20 text-3xl font-simebold text-center flex items-center justify-center text-neutral-content">{{ card.title }}</div>
+          <div class="w-2/3 m-auto h-20 text-3xl font-simebold text-center flex items-center justify-center text-secondary-content">{{ card.title }}</div>
           <div class="text-center m-auto w-2/3">{{ card.text }}</div>
         </div>
       </div>

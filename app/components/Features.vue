@@ -1,28 +1,28 @@
 <template>
-  <div class="px-28">
+  <div class="px-10 2xl:px-28">
     <div class="flex flex-col items-center gap-5">
       <div class="text-4xl font-semibold"><span class="text-secondary-content">Our</span> <span class="text-accent-content">Features</span></div>
-      <div class="text-lg">This very extraordinary feature, can make learning activities more efficient</div>
+      <div class="text-lg text-center">This very extraordinary feature, can make learning activities more efficient</div>
     </div>
-    <div class="flex items-center justify-between">
+    <div class="flex items-center flex-col justify-between mt-10 2xl:gap-20 2xl:mt-0 2xl:flex-row">
       <img :src="'img/group.png'" alt="" />
-      <div class="flex flex-col gap-10">
-        <div class="text-4xl text-secondary-content font-semibold w-2/3">A <span class="text-accent-content">user interface</span> designed for the classroom</div>
-        <div class="flex gap-5" v-for="icon in icons">
+      <div class="flex flex-col gap-10 mt-10 2xl:mt-0">
+        <div class="text-2xl text-secondary-content font-semibold 2xl:text-4xl 2xl:w-4/5">A <span class="text-accent-content">user interface</span> designed for the classroom</div>
+        <div class="flex gap-5 items-center 2xl:items-start" v-for="icon in icons">
           <div class="w-14 h-14 shadow-xl flex justify-center items-center rounded-full"><img :src="icon.img" alt="" /></div>
-          <div class="text-lg w-1/2">{{ icon.text }}</div>
+          <div class="text-lg w-2/3 2xl:w-1/2">{{ icon.text }}</div>
         </div>
       </div>
     </div>
     <div>
-      <div class="grid grid-cols-2 items-center" v-for="(wrap, index) in wraps">
+      <div class="grid grid-rows-1 gap-10 mt-10 items-center h-fit 2xl:grid-cols-2 2xl:grid-rows-none 2xl:mt-0" v-for="(wrap, index) in wraps">
         <div>
           <div class="flex flex-col gap-5">
-            <div class="text-secondary-content text-4xl w-2/3 font-semibold">{{ wrap.title }}</div>
-            <div class="text-lg w-1/2">{{ wrap.text }}</div>
+            <div class="text-3xl text-secondary-content text-center 2xl:w-2/3 font-semibold 2xl:text-4xl 2xl:text-left">{{ wrap.title }}</div>
+            <div class="text-lg 2xl:w-1/2">{{ wrap.text }}</div>
           </div>
         </div>
-        <div :class="{ 'col-start-1 row-start-1': index % 2 === 1 }"><img :src="wrap.img" alt="" /></div>
+        <div :class="{ '2xl:col-start-1 2xl:row-start-1': index % 2 === 1 }"><img :src="wrap.img" alt="" /></div>
       </div>
     </div>
   </div>
