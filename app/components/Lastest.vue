@@ -1,23 +1,23 @@
 <template>
-  <div class="px-28 py-10">
+  <div class="px-10 md:px-16 2xl:px-28 py-10">
     <div class="flex items-center flex-col gap-3">
       <div class="text-4xl text-secondary-content font-semibold">Lastest News and Resources</div>
       <div class="text-lg">See the developments that have occurred to TOTC in the world</div>
     </div>
-    <div class="flex justify-between mt-5">
-      <div class="w-1/2 flex flex-col gap-5">
+    <div class="flex flex-col justify-between mt-5 xl:flex-row xl:gap-20 2xl:gap-0">
+      <div class="flex flex-col gap-5 xl:w-1/2 2xl:w-1/2">
         <div><img :src="'img/coffee.png'" alt="" /></div>
         <button class="btn w-fit px-10 text-base-100 rounded-2xl">NEWS</button>
-        <div class="text-3xl w-4/5">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</div>
+        <div class="text-3xl lg:w-4/5">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</div>
         <div class="w-4/5 text-lg">Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</div>
         <button class="btn w-fit px-10 text-base-100 rounded-2xl">Read more</button>
       </div>
-      <div class="w-1/2 flex flex-col gap-10">
-        <div class="flex gap-5 items-center" v-for="post in posts">
-          <img :src="post.img" alt="" />
-          <div class="flex flex-col h-fit gap-5">
-            <div class="text-2xl font-semibold">{{ post.title }}</div>
-            <div class="text-xl">{{ post.text }}</div>
+      <div class="flex flex-col gap-10 mt-5 xl:mt-0 xl:w-1/2 2xl:w-1/2">
+        <div class="flex gap-5" v-for="post in posts">
+          <img class="xl:w-1/2" :src="post.img" alt="" />
+          <div class="flex flex-col h-fit xl:gap-10">
+            <div class="text-xl 2xl:text-2xl font-semibold">{{ post.title }}</div>
+            <div class="text-lg 2xl:text-xl">{{ post.text }}</div>
           </div>
         </div>
       </div>

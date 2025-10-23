@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-base-200 px-10 2xl:px-20">
+  <div class="bg-base-200 px-10 md:px-16 2xl:px-20">
     <div class="navbar">
       <div class="navbar-start">
         <div class="dropdown">
@@ -18,8 +18,8 @@
         </div>
         <a class="cursor-pointer"><img class="w-20" :src="'img/logo.png'" alt="" /></a>
       </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal gap-8 text-base-100 text-lg px-1 active:bg-base-200">
+      <div class="navbar-center hidden mr-20 lg:flex 2xl:mr-0">
+        <ul class="menu menu-horizontal 2xl:gap-8 text-base-100 text-lg px-1 active:bg-base-200">
           <li><a class="rounded-md">Home</a></li>
           <li><a class="rounded-md">Courses</a></li>
           <li><a class="rounded-md">Careers</a></li>
