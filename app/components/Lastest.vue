@@ -4,7 +4,7 @@
       <div class="text-4xl text-secondary-content font-semibold">Lastest News and Resources</div>
       <div class="text-lg">See the developments that have occurred to TOTC in the world</div>
     </div>
-    <div class="flex flex-col justify-between mt-5 xl:flex-row xl:gap-20 2xl:gap-0">
+    <div class="flex flex-col justify-between mt-5 xl:flex-row xl:gap-20">
       <div class="flex flex-col gap-5 xl:w-1/2 2xl:w-1/2">
         <div><img :src="'img/coffee.png'" alt="" /></div>
         <button class="btn w-fit px-10 text-base-100 rounded-2xl">NEWS</button>
@@ -14,7 +14,7 @@
       </div>
       <div class="flex flex-col gap-10 mt-5 xl:mt-0 xl:w-1/2 2xl:w-1/2">
         <div class="flex gap-5" v-for="post in posts">
-          <img class="xl:w-1/2" :src="post.img" alt="" />
+          <img class="xl:w-1/2 2xl:w-2/5" :src="post.img" alt="" />
           <div class="flex flex-col h-fit xl:gap-10">
             <div class="text-xl 2xl:text-2xl font-semibold">{{ post.title }}</div>
             <div class="text-lg 2xl:text-xl">{{ post.text }}</div>

@@ -4,11 +4,11 @@
       <div class="text-4xl font-semibold text-secondary-content">All-In-One <span class="text-accent-content">Cloud Software.</span></div>
       <div class="text-center 2xl:w-1/3">TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office.</div>
     </div>
-    <div class="grid lg:grid-cols-2 xl:grid-cols-3 mt-5 gap-20 2xl:gap-32">
+    <div class="grid lg:grid-cols-2 xl:grid-cols-3 mt-5 2xl:gap-32">
       <div v-for="card in cards">
         <div class="shadow-lg h-full pb-4 rounded-3xl flex flex-col justify-center gap-3 xl:px-4 2xl:px-0">
           <div><img class="m-auto" :src="card.img" alt="" /></div>
-          <div class="2xl:w-2/3 m-auto text-2xl font-simebold text-center flex items-center justify-center text-secondary-content 2xl:text-3xl">{{ card.title }}</div>
+          <div class="m-auto text-xl font-simebold text-center flex items-center justify-center text-secondary-content 2xl:text-3xl">{{ card.title }}</div>
           <div class="text-center m-auto 2xl:w-2/3">{{ card.text }}</div>
         </div>
       </div>
