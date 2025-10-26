@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import Testimonial from "~/components/Testimonial.vue";
+  // import Testimonial from "~/components/mainPage/Testimonial.vue";
 </script>
 
 <template>

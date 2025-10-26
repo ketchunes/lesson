@@ -20,11 +20,11 @@
       </div>
       <div class="navbar-center hidden mr-20 lg:flex 2xl:mr-0">
         <ul class="menu menu-horizontal 2xl:gap-8 text-base-100 text-lg px-1 active:bg-base-200">
-          <li><a class="rounded-md">Home</a></li>
-          <li><a class="rounded-md">Courses</a></li>
-          <li><a class="rounded-md">Careers</a></li>
-          <li><a class="rounded-md">Blog</a></li>
-          <li><a class="rounded-md">About Us</a></li>
+          <li><NuxtLink to="/" class="rounded-md">Home</NuxtLink></li>
+          <li><NuxtLink to="/blog" class="rounded-md">Courses</NuxtLink></li>
+          <li><NuxtLink to="/blog" class="rounded-md">Careers</NuxtLink></li>
+          <li><NuxtLink to="/blog" class="rounded-md">Blog</NuxtLink></li>
+          <li><NuxtLink to="/blog" class="rounded-md">About us</NuxtLink></li>
         </ul>
       </div>
       <div class="navbar-end gap-4">
