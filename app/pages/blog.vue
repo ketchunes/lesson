@@ -2,6 +2,7 @@
   <div>
     <Header />
     <BlogBanner />
+    <BlogLanguages />
     <Footer />
   </div>
 </template>
