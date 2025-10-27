@@ -4,6 +4,7 @@
     <BlogBanner />
     <BlogLanguages />
     <BlogRelated />
+    <BlogMarketing />
     <Footer />
   </div>
 </template>
