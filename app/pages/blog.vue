@@ -3,6 +3,7 @@
     <Header />
     <BlogBanner />
     <BlogLanguages />
+    <BlogRelated />
     <Footer />
   </div>
 </template>
