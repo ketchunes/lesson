@@ -7,7 +7,7 @@
         <div class="w-2/3 text-lg text-base-content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor
         </div>
-        <div class="btn rounded-xl w-fit text-base-100 py-5 px-10">Start learning now</div>
+        <NuxtLink to="/price" class="btn rounded-xl w-fit text-base-100 py-5 px-10">Start learning now</NuxtLink>
       </div>
       <img class="w-full" :src="'img/coffee.png'" alt="" />
     </div>
